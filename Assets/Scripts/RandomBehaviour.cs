@@ -10,6 +10,7 @@ public class RandomBehaviour : MonoBehaviour {
     private int index = 0;
 
     void Start() {
+        names = DataController.Read2TextBox();
         Shuffle();
     }
 
