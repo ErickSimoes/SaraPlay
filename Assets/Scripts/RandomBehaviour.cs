@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 
 public class RandomBehaviour : MonoBehaviour {
-    [SerializeField]
+
     private string[] names;
     [SerializeField]
     private TextMeshProUGUI text;

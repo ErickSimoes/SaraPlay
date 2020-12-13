@@ -237,17 +237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31e3795734ea2904e81b3ce97c5117bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  names:
-  - Mikey
-  - Princesa Sofia
-  - LOL
-  - Schooby Doo
-  - Mutano
-  - Erick
-  - Sara
-  - "Mam\xE3e"
-  - Papai
-  - Pateta
   text: {fileID: 2051266168}
 --- !u!1 &258365118
 GameObject:
