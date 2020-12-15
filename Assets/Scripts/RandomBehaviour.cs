@@ -19,10 +19,10 @@ public class RandomBehaviour : MonoBehaviour {
     }
 
     private IEnumerator ChooseName() {
+        
         int max = 10;
-
         if (names.Length < 10) {
-            max = name.Length - 1;
+            max = names.Length - 1;
         }
 
         for (int i = 0; i < max; i++) {
