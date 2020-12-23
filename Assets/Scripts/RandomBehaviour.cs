@@ -11,7 +11,7 @@ public class RandomBehaviour : MonoBehaviour {
 
     void Start() {
         names = DataController.Read2TextBox();
-        Shuffle();
+        JsonHelper.Shuffle(names);
     }
 
     public void StartSortName() {
@@ -19,7 +19,7 @@ public class RandomBehaviour : MonoBehaviour {
     }
 
     private IEnumerator ChooseName() {
-        
+
         int max = 10;
         if (names.Length < 10) {
             max = names.Length - 1;
@@ -37,13 +37,4 @@ public class RandomBehaviour : MonoBehaviour {
         }
     }
 
-    private void Shuffle() {
-        int rdm;
-        for (int i = 0; i < names.Length; i++) {
-            rdm = Random.Range(0, names.Length - 1);
-            string temp = names[rdm];
-            names[rdm] = names[i];
-            names[i] = temp;
-        }
-    }
 }
