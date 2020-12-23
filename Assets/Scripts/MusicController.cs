@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class MusicController : MonoBehaviour {
 
+    public static string TOGGLE_STATE = "toggle_state";
+
     [SerializeField]
     private AudioClip[] audioClips;
     [SerializeField]
@@ -37,5 +39,15 @@ public class MusicController : MonoBehaviour {
 
         audioSource.clip = audioClips[index++];
         audioSource.Play();
+    }
+
+    public void OnOff(bool onOff) {
+        if (onOff) {
+            audioSource.Play();
+        } else {
+            audioSource.Pause();
+        }
+
+        PlayerPrefs.SetInt(TOGGLE_STATE, onOff ? 1 : 0);
     }
 }
