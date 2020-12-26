@@ -21,6 +21,7 @@ public class MusicController : MonoBehaviour {
 
     void Start() {
         JsonHelper.Shuffle(audioClips);
+
         PlayNext();
     }
 
@@ -36,7 +37,12 @@ public class MusicController : MonoBehaviour {
         }
 
         audioSource.clip = audioClips[index++];
-        audioSource.Play();
+
+        if (PlayerPrefs.HasKey(TOGGLE_STATE)) {
+            if (PlayerPrefs.GetInt(TOGGLE_STATE) == 1) {
+                audioSource.Play();
+            }
+        }
     }
 
     public void OnOff(bool onOff) {
