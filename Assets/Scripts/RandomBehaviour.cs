@@ -34,7 +34,10 @@ public class RandomBehaviour : MonoBehaviour {
 
         for (int i = 0; i < max; i++) {
             text.text = names[i];
-            audioSource.Play();
+            
+            if (PlayerPrefs.GetInt(MusicController.TOGGLE_STATE) == 1) {
+                audioSource.Play();
+            }
             yield return new WaitForSeconds(.15f);
         }
 
