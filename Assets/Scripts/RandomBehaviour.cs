@@ -8,8 +8,13 @@ public class RandomBehaviour : MonoBehaviour {
     [SerializeField]
     private TextMeshProUGUI text;
     private int index = 0;
+    private AudioSource audioSource;
+    [SerializeField]
+    private AudioClip nextClip;
 
     void Start() {
+        audioSource = GetComponent<AudioSource>();
+
         names = DataController.Read2TextBox();
         JsonHelper.Shuffle(names);
     }
@@ -25,8 +30,11 @@ public class RandomBehaviour : MonoBehaviour {
             max = names.Length - 1;
         }
 
+        audioSource.clip = nextClip;
+
         for (int i = 0; i < max; i++) {
             text.text = names[i];
+            audioSource.Play();
             yield return new WaitForSeconds(.15f);
         }
 

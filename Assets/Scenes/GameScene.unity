@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 2051266168}
+  nextClip: {fileID: 8300000, guid: 10a2bd60c839cec40a18f77646711cec, type: 3}
 --- !u!114 &72890896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +267,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
