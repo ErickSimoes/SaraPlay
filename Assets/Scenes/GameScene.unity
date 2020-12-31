@@ -244,6 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 2051266168}
   nextClip: {fileID: 8300000, guid: 10a2bd60c839cec40a18f77646711cec, type: 3}
+  choiceClip: {fileID: 8300000, guid: 7190ab35aea55f345b7480ace242b6b2, type: 3}
 --- !u!114 &72890896
 MonoBehaviour:
   m_ObjectHideFlags: 0
