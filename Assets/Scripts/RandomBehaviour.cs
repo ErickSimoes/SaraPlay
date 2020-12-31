@@ -10,7 +10,7 @@ public class RandomBehaviour : MonoBehaviour {
     private int index = 0;
     private AudioSource audioSource;
     [SerializeField]
-    private AudioClip nextClip;
+    private AudioClip nextClip, choiceClip;
 
     void Start() {
         audioSource = GetComponent<AudioSource>();
@@ -39,6 +39,11 @@ public class RandomBehaviour : MonoBehaviour {
                 audioSource.Play();
             }
             yield return new WaitForSeconds(.15f);
+        }
+
+        audioSource.clip = choiceClip;
+        if (PlayerPrefs.GetInt(MusicController.TOGGLE_STATE) == 1) {
+            audioSource.Play();
         }
 
         text.text = names[index++];
