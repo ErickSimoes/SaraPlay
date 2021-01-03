@@ -995,6 +995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicToggle
       objectReference: {fileID: 0}
+    - target: {fileID: 433363344866580438, guid: 78c9f47616ae77e44914a5a0a6266e15, type: 3}
+      propertyPath: m_Transition
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 433363344866580439, guid: 78c9f47616ae77e44914a5a0a6266e15, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1086,6 +1090,30 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 433363344866580439, guid: 78c9f47616ae77e44914a5a0a6266e15, type: 3}
   m_PrefabInstance: {fileID: 1655780297}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1874782539 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 433363344866580436, guid: 78c9f47616ae77e44914a5a0a6266e15, type: 3}
+  m_PrefabInstance: {fileID: 1655780297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1874782542
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874782539}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e403a1da1b016894c83d34c1fea24279, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2051266166
 GameObject:
   m_ObjectHideFlags: 0
