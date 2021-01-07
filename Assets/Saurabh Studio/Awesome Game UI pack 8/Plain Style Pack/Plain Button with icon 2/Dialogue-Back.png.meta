@@ -3,7 +3,7 @@ guid: e35c9c46cd00a404382491f20dc9f8f2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -23,6 +23,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -46,17 +47,21 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 25, y: 30, z: 35, w: 26}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0.3
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -73,7 +78,114 @@ TextureImporter:
   spriteSheet:
     serializedVersion: 2
     sprites: []
-    outline: []
+    outline:
+    - - {x: 198, y: -484}
+      - {x: 251, y: -483}
+      - {x: 288, y: -482}
+      - {x: 317, y: -481}
+      - {x: 341, y: -480}
+      - {x: 377, y: -478}
+      - {x: 403, y: -476}
+      - {x: 435, y: -473}
+      - {x: 446, y: -469}
+      - {x: 451, y: -464}
+      - {x: 457, y: -451}
+      - {x: 464, y: -412}
+      - {x: 466, y: -387}
+      - {x: 467, y: -377}
+      - {x: 471, y: -353}
+      - {x: 473, y: -293}
+      - {x: 474, y: -273}
+      - {x: 475, y: -251}
+      - {x: 476, y: -225}
+      - {x: 477, y: -196}
+      - {x: 478, y: -159}
+      - {x: 479, y: -111}
+      - {x: 479, y: -27}
+      - {x: 480, y: -26}
+      - {x: 480, y: 82}
+      - {x: 479, y: 83}
+      - {x: 479, y: 167}
+      - {x: 478, y: 215}
+      - {x: 477, y: 251}
+      - {x: 475, y: 306}
+      - {x: 472, y: 364}
+      - {x: 468, y: 425}
+      - {x: 465, y: 448}
+      - {x: 459, y: 469}
+      - {x: 455, y: 475}
+      - {x: 445, y: 479}
+      - {x: 422, y: 483}
+      - {x: 372, y: 486}
+      - {x: 349, y: 487}
+      - {x: 315, y: 488}
+      - {x: 150, y: 488}
+      - {x: 99, y: 487}
+      - {x: 60, y: 486}
+      - {x: 28, y: 485}
+      - {x: -1, y: 484}
+      - {x: -27, y: 483}
+      - {x: -73, y: 481}
+      - {x: -93, y: 483}
+      - {x: -96, y: 480}
+      - {x: -142, y: 479}
+      - {x: -148, y: 479}
+      - {x: -168, y: 476}
+      - {x: -184, y: 475}
+      - {x: -215, y: 473}
+      - {x: -229, y: 474}
+      - {x: -243, y: 471}
+      - {x: -268, y: 469}
+      - {x: -276, y: 470}
+      - {x: -280, y: 470}
+      - {x: -292, y: 467}
+      - {x: -304, y: 466}
+      - {x: -368, y: 459}
+      - {x: -390, y: 456}
+      - {x: -415, y: 452}
+      - {x: -432, y: 448}
+      - {x: -449, y: 443}
+      - {x: -457, y: 433}
+      - {x: -463, y: 413}
+      - {x: -466, y: 392}
+      - {x: -472, y: 355}
+      - {x: -476, y: 305}
+      - {x: -480, y: 251}
+      - {x: -483, y: 232}
+      - {x: -482, y: 226}
+      - {x: -484, y: 179}
+      - {x: -485, y: 156}
+      - {x: -486, y: 131}
+      - {x: -487, y: 102}
+      - {x: -488, y: 69}
+      - {x: -489, y: 26}
+      - {x: -490, y: -38}
+      - {x: -490, y: -173}
+      - {x: -489, y: -230}
+      - {x: -488, y: -266}
+      - {x: -487, y: -293}
+      - {x: -484, y: -349}
+      - {x: -480, y: -397}
+      - {x: -477, y: -421}
+      - {x: -474, y: -438}
+      - {x: -472, y: -447}
+      - {x: -467, y: -465}
+      - {x: -461, y: -468}
+      - {x: -438, y: -471}
+      - {x: -418, y: -474}
+      - {x: -357, y: -477}
+      - {x: -336, y: -478}
+      - {x: -312, y: -479}
+      - {x: -285, y: -480}
+      - {x: -253, y: -481}
+      - {x: -216, y: -482}
+      - {x: -168, y: -483}
+      - {x: -108, y: -484}
+      - {x: -97, y: -486}
+      - {x: -83, y: -486}
+      - {x: -81, y: -485}
+      - {x: 79, y: -485}
+      - {x: 80, y: -484}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
