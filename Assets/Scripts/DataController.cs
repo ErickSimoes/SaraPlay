@@ -1,12 +1,15 @@
 ﻿using System.IO;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class DataController : MonoBehaviour {
 
     private const string fileName = "names_list.json";
-    [SerializeField] private TMP_InputField textBox;
+    //[SerializeField] private TMP_InputField textBox;
+    [SerializeField] private GameObject panel;
+    [SerializeField] private GameObject nameButtonPrefab;
 
     public void SaveTextBox(TextMeshProUGUI textBox) {
         string namesListJson = JsonHelper.ToJson(textBox.text.Split('\n'), true);
@@ -23,9 +26,11 @@ public class DataController : MonoBehaviour {
     }
 
     private void OnSceneLoad(Scene scene, LoadSceneMode mode) {
-        if (textBox) {
-            string[] name_list = Read2TextBox();
-            textBox.text = string.Join("\n", name_list);
+        string[] name_list = Read2TextBox();
+        GameObject tempNameButton;
+        foreach (string name in name_list) {
+            tempNameButton = Instantiate(nameButtonPrefab, panel.transform);
+            tempNameButton.GetComponentInChildren<Text>().text = name;
         }
     }
 }
