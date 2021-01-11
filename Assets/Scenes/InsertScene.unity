@@ -688,10 +688,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0b3659878a900429cdf809084c15c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameList: []
   panel: {fileID: 93178354}
   nameButtonPrefab: {fileID: 5541404432261813188, guid: 8f06e771eb4d6bd408869607c54995eb, type: 3}
   deleteOrEditPanel: {fileID: 901182401}
+  AddPanel: {fileID: 180258800}
 --- !u!4 &256794540
 Transform:
   m_ObjectHideFlags: 0
