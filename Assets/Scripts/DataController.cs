@@ -9,7 +9,7 @@ public class DataController : MonoBehaviour {
     private const string fileName = "names_list.json";
     [SerializeField] private GameObject panel;
     [SerializeField] private GameObject nameButtonPrefab;
-    [SerializeField] private GameObject deleteOrEditPanel;
+    [SerializeField] private DeleteOrEditController deleteOrEditPanel;
 
     public void SaveTextBox(TextMeshProUGUI textBox) {
         string namesListJson = JsonHelper.ToJson(textBox.text.Split('\n'), true);
@@ -32,7 +32,7 @@ public class DataController : MonoBehaviour {
             tempNameButton = Instantiate(nameButtonPrefab, panel.transform);
             tempNameButton.GetComponentInChildren<Text>().text = name;
             tempNameButton.GetComponent<Button>().onClick
-                          .AddListener(delegate { deleteOrEditPanel.SetActive(true); });
+                          .AddListener(delegate { deleteOrEditPanel.setName(name); });
         }
     }
 }

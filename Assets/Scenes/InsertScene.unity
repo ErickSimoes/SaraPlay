@@ -690,7 +690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 93178354}
   nameButtonPrefab: {fileID: 5541404432261813188, guid: 8f06e771eb4d6bd408869607c54995eb, type: 3}
-  deleteOrEditPanel: {fileID: 901182398}
+  deleteOrEditPanel: {fileID: 901182401}
 --- !u!4 &256794540
 Transform:
   m_ObjectHideFlags: 0
@@ -1789,6 +1789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a752b69f3d719f4c8273e09a83e0edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 951797618}
 --- !u!1 &951797616
 GameObject:
   m_ObjectHideFlags: 0
