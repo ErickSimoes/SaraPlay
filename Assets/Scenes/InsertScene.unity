@@ -1853,8 +1853,8 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 14
-    m_MaxSize: 200
-    m_Alignment: 4
+    m_MaxSize: 170
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 0
