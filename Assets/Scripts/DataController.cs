@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 public class DataController : MonoBehaviour {
 
     private const string fileName = "names_list.json";
-    //[SerializeField] private TMP_InputField textBox;
     [SerializeField] private GameObject panel;
     [SerializeField] private GameObject nameButtonPrefab;
+    [SerializeField] private GameObject deleteOrEditPanel;
 
     public void SaveTextBox(TextMeshProUGUI textBox) {
         string namesListJson = JsonHelper.ToJson(textBox.text.Split('\n'), true);
@@ -31,6 +31,8 @@ public class DataController : MonoBehaviour {
         foreach (string name in name_list) {
             tempNameButton = Instantiate(nameButtonPrefab, panel.transform);
             tempNameButton.GetComponentInChildren<Text>().text = name;
+            tempNameButton.GetComponent<Button>().onClick
+                          .AddListener(delegate { deleteOrEditPanel.SetActive(true); });
         }
     }
 }
