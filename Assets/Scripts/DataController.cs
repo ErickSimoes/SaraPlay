@@ -11,7 +11,7 @@ public class DataController : MonoBehaviour {
     [SerializeField] private GameObject nameButtonPrefab;
     [SerializeField] private DeleteOrEditController deleteOrEditPanel;
 
-    public void SaveTextBox(TextMeshProUGUI textBox) {
+    private void SaveTextBox(TextMeshProUGUI textBox) {
         string namesListJson = JsonHelper.ToJson(textBox.text.Split('\n'), true);
         File.WriteAllText(Path.Combine(Application.persistentDataPath, fileName), namesListJson);
     }
