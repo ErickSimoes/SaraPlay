@@ -688,6 +688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0b3659878a900429cdf809084c15c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameList: []
   panel: {fileID: 93178354}
   nameButtonPrefab: {fileID: 5541404432261813188, guid: 8f06e771eb4d6bd408869607c54995eb, type: 3}
   deleteOrEditPanel: {fileID: 901182401}
@@ -1668,7 +1669,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 835790001}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 256794539}
+        m_TargetAssemblyTypeName: DataController, Assembly-CSharp
+        m_MethodName: SaveName
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1746079541}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &835790001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2182,6 +2195,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 721663536}
+        m_TargetAssemblyTypeName: UnityEngine.UI.InputField, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
