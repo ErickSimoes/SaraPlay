@@ -34,13 +34,15 @@ public class DataController : MonoBehaviour {
     }
 
     private void OnSceneLoad(Scene scene, LoadSceneMode mode) {
-        nameList.AddRange(Read2TextBox());
-        GameObject tempNameButton;
-        foreach (string name in nameList) {
-            tempNameButton = Instantiate(nameButtonPrefab, panel.transform);
-            tempNameButton.GetComponentInChildren<Text>().text = name;
-            tempNameButton.GetComponent<Button>().onClick
-                          .AddListener(delegate { deleteOrEditPanel.setName(name); });
+        if(scene.name == "InsertScene") {
+            nameList.AddRange(Read2TextBox());
+            GameObject tempNameButton;
+            foreach (string name in nameList) {
+                tempNameButton = Instantiate(nameButtonPrefab, panel.transform);
+                tempNameButton.GetComponentInChildren<Text>().text = name;
+                tempNameButton.GetComponent<Button>().onClick
+                            .AddListener(delegate { deleteOrEditPanel.setName(name); });
+            }
         }
     }
 }
