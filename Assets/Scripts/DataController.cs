@@ -1,8 +1,6 @@
 ﻿using System.IO;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class DataController : MonoBehaviour {
@@ -18,7 +16,7 @@ public class DataController : MonoBehaviour {
     void Start() {
         ReloadNamesPanel();
     }
-    
+
     private void SaveNameList() {
         string namesListJson = JsonHelper.ToJson(nameList.ToArray(), true);
         File.WriteAllText(Path.Combine(Application.persistentDataPath, fileName), namesListJson);
