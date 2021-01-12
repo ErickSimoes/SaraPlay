@@ -15,6 +15,10 @@ public class DataController : MonoBehaviour {
     [SerializeField] private DeleteOrEditController deleteOrEditPanel;
     [SerializeField] private GameObject AddPanel;
 
+    void Start() {
+        ReloadNamesPanel();
+    }
+    
     private void SaveNameList() {
         string namesListJson = JsonHelper.ToJson(nameList.ToArray(), true);
         File.WriteAllText(Path.Combine(Application.persistentDataPath, fileName), namesListJson);
@@ -36,16 +40,6 @@ public class DataController : MonoBehaviour {
     public static string[] Read2TextBox() {
         string allText = File.ReadAllText(Path.Combine(Application.persistentDataPath, fileName));
         return JsonHelper.FromJson<string>(allText);
-    }
-
-    private void OnEnable() {
-        SceneManager.sceneLoaded += OnSceneLoad;
-    }
-
-    private void OnSceneLoad(Scene scene, LoadSceneMode mode) {
-        if(scene.name == "InsertScene") {
-            ReloadNamesPanel();
-        }
     }
 
     private void ReloadNamesPanel() {
