@@ -17,32 +17,31 @@ public class DataController : MonoBehaviour {
         ReloadNamesPanel();
     }
 
-    private void SaveNameList() {
-        string namesListJson = JsonHelper.ToJson(nameList.ToArray(), true);
-        File.WriteAllText(Path.Combine(Application.persistentDataPath, fileName), namesListJson);
-    }
-    
     public void SaveName(Text name) {
         nameList.Add(name.text);
         SaveNameList();
-        ReloadNamesPanel();
         AddPanel.SetActive(false);
     }
 
     public void RemoveName(string name) {
         nameList.Remove(name);
         SaveNameList();
-        ReloadNamesPanel();
     }
 
-    public static string[] Read2TextBox() {
+    private void SaveNameList() {
+        string namesListJson = JsonHelper.ToJson(nameList.ToArray(), true);
+        File.WriteAllText(Path.Combine(Application.persistentDataPath, fileName), namesListJson);
+        ReloadNamesPanel();
+    }
+    
+    public static string[] ReadNameList2Array() {
         string allText = File.ReadAllText(Path.Combine(Application.persistentDataPath, fileName));
         return JsonHelper.FromJson<string>(allText);
     }
 
     private void ReloadNamesPanel() {
         nameList = new List<string>();
-        nameList.AddRange(Read2TextBox());
+        nameList.AddRange(ReadNameList2Array());
 
         foreach (Transform item in panel.transform) {
             Destroy(item.gameObject);
