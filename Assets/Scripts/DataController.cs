@@ -27,6 +27,12 @@ public class DataController : MonoBehaviour {
         AddPanel.SetActive(false);
     }
 
+    public void RemoveName(string name) {
+        nameList.Remove(name);
+        SaveNameList();
+        ReloadNamesPanel();
+    }
+
     public static string[] Read2TextBox() {
         string allText = File.ReadAllText(Path.Combine(Application.persistentDataPath, fileName));
         return JsonHelper.FromJson<string>(allText);
