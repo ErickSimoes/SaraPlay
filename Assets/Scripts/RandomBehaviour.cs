@@ -15,7 +15,7 @@ public class RandomBehaviour : MonoBehaviour {
     void Start() {
         audioSource = GetComponent<AudioSource>();
 
-        names = DataController.Read2TextBox();
+        names = DataController.ReadNameList2Array();
         JsonHelper.Shuffle(names);
     }
 
