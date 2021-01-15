@@ -13,11 +13,17 @@ public class DataController : MonoBehaviour {
     [SerializeField] private DeleteOrEditController deleteOrEditPanel;
     [SerializeField] private GameObject AddPanel;
 
+    public static bool isEdition = false;
+    public static string originalName;
+
     void Start() {
         ReloadNamesPanel();
     }
 
     public void SaveName(Text name) {
+        if (isEdition) {
+            RemoveName(originalName);
+        }
         nameList.Add(name.text);
         SaveNameList();
         AddPanel.SetActive(false);
