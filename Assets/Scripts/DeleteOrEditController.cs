@@ -17,5 +17,7 @@ public class DeleteOrEditController : MonoBehaviour {
 
     public void EditName() {
         text2Save.text = text.text;
+        DataController.isEdition = true;
+        DataController.originalName = text.text;
     }
 }
