@@ -1,5 +1,11 @@
+[![Made with Unity](https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=for-the-badge&logo=unity)](https://unity3d.com)
+
 # SaraPlay
 *Mobile Open Source version of "Who Am I?"*
+
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](/blob/master/LICENSE)
+
 
 | Developer Engine | Platform | License |
 |------------------|----------|---------|
@@ -22,3 +28,5 @@
 [//]: # (## How to modify the game?)
 
 *P.S.: Game developed as a birthday present for my sister*
+
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)]()
