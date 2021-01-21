@@ -7,9 +7,9 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](/blob/master/LICENSE)
 
 
-| Developer Engine | Platform | License |
-|------------------|----------|---------|
-| [![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)](https://unity.com/) <br> 2020.2.1f1|  📱 <br> Mobile  | [MIT License](/LICENSE)
+| Developer Engine | Platform | License | Download .apk
+|------------------|----------|---------|---------------|
+| [![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white)](https://unity.com/) <br> 2020.2.1f1|  📱 <br> Mobile  | [MIT License](/LICENSE) | [Android](https://github.com/ErickSimoes/SaraPlay/releases/latest/)
 
 ## Setup
 - 👥 The game can be played by two or more people;
